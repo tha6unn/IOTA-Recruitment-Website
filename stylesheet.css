@@ -22,27 +22,31 @@
     background: var(--bg-color);
     color: var(--text-color);
   }
-  .header {
+ .header {
     position: fixed;
     top: 2rem;
     left: 2rem;
     right: 1rem;
     width: 97%;
     border-radius: 100rem;
-    padding: 0.5px;
+    padding-top: 0.2rem;
+    padding-left: 10px;
+    padding-right: 3rem;
     background: #66b2b2;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: top 0.3s ease-in-out; 
+    transition: top 0.3s ease-in-out; /* For smooth hide/reappear */
 }
-  
+   
 .header.hide {
     top: -50%;
 }
-  
+.navbar{
+  padding-bottom: 0.5rem;
+}
 .logo {
     font-size: 3rem;
     color: var(--text-color);
@@ -61,7 +65,7 @@
     color: var(--text-color);
     margin-left: 0rem; 
 }
-.active,.two,.three,.four {
+.one,.two,.three,.four {
     font-size: 2.3rem;
     color: white;
     margin-left: 1rem;
@@ -72,7 +76,7 @@
     font-family: "Bicubik";
     cursor: pointer;
 }
-.active:hover {
+.one:hover {
    color: black;
    border-bottom: 3px solid red;
 
@@ -629,17 +633,19 @@ section {
       }
       .navbar{
         flex-direction: column;
-        width: 100%; 
+        width: 40%; /* Full width on mobile */
         align-items: center;
         position: absolute;
         top: 100%;
-        right: 0;
-        margin-right: 10vw;
-        padding: 1rem 0;
+        right: 10%;
+        margin-right: 0;
+        padding:0;
         background: rgba(0, 0, 0, 0.9);
         backdrop-filter: blur(20px);
-        border-bottom-left-radius: 2rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
         border-left: 2px solid #66b2b2;
+        border-right: 2px solid #66b2b2;
         border-bottom: 2px solid #66b2b2;
         display: none;
       }
@@ -661,8 +667,26 @@ section {
       }
       .IOTA p{
           font-size: 2rem;
-      
       }
+      .one:hover {
+        color: white;
+        border-bottom: 3px solid red;
+     
+     }
+     .two:hover {
+       color: white;
+       border-bottom: 3px solid green;
+     
+     }
+     .three:hover {
+       color: white;
+       border-bottom: 3px solid #f192bd;
+     
+     }
+     .four:hover {
+       color: white;
+       border-bottom: 3px solid blue;
+     }
       .home{
           flex-direction: column;
           margin: 5rem 4rem;
