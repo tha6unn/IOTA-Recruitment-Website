@@ -36,11 +36,11 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: top 0.3s ease-in-out; /* For smooth hide/reappear */
+    transition: top 0.3s ease-in-out; 
 }
   
 .header.hide {
-    top: -50%; /* Move the header out of view */
+    top: -50%;
 }
   
 .logo {
@@ -57,9 +57,9 @@
 }
 
 .logo-name {
-    font-size: 100rem; /* Adjust this for the name's font size */
+    font-size: 100rem; 
     color: var(--text-color);
-    margin-left: 0rem; /* Space between logo and name */
+    margin-left: 0rem; 
 }
 .active,.two,.three,.four {
     font-size: 2.3rem;
@@ -629,7 +629,7 @@ section {
       }
       .navbar{
         flex-direction: column;
-        width: 100%; /* Full width on mobile */
+        width: 100%; 
         align-items: center;
         position: absolute;
         top: 100%;
@@ -655,7 +655,7 @@ section {
       }
       .IOTA {
         padding: 10px;
-        max-width: 100%; /* Use full width */
+        max-width: 100%; 
         text-align: left; 
       
       }
@@ -683,9 +683,9 @@ section {
           margin-top: -2rem;
       }
       .about1, .about2, .about3 {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column;
         align-items: center;
-        margin: 3rem; /* Reduced margins for smaller screens */
+        margin: 3rem; 
         padding: 1rem;
         border-radius: 2rem;
     }
@@ -721,4 +721,4 @@ section {
   #logo{
     margin: 0;
   }
-  }
+}
